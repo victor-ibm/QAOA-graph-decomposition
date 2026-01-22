@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "QAOA-GRAPH-DECOMPOSITION"
+version = "0.0.0"
+description = "Sampling matchings with QAOA for sparse graph decomposition"
+readme = "README.md"
+requires-python = "~=3.10"
+authors = [
+  {name = "Victor Valls", email = "victor.valls@ibm.com" },
+  {name = "George Pennington", email = "george.pennington@stfc.ac.uk" },
+  {name = "Oscar Wallis", email = "oscar.wallis@stfc.ac.uk" },
+  {name = "Francesca Schiavello", email = "francesca.schiavello@stfc.ac.uk" },
+  {name = "Naeimeh Mohseni", email = "naeimeh.mohseni@eon.com" },
+]
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "scipy",
+  "networkx",
+  "qiskit~=1.4",
+  "qiskit_aer",
+  "qiskit_optimization",
+  "qiskit_algorithms",
+  "qiskit_ibm_catalog",
+  "qiskit_ibm_runtime",
+  "dimod",
+  "ipykernel",
+  "docplex",
+  "qiskit_ibm_runtime",
+  "h5py",
+  "hdf5view",
+  "pyqt5",
+  "sympy",
+]
+
+[project.optional-dependencies]
+test = ["coverage"]
